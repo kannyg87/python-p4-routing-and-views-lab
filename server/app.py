@@ -37,22 +37,5 @@ def math(num1, operation, num2):
 
     return str(result)
 
-    if operation == '+':
-        result = num1 + num2
-    elif operation == '-':
-        result = num1 - num2
-    elif operation == '*':
-        result = num1 * num2
-    elif operation == '/':
-        if num2 == 0:
-            return 'Division by zero is not allowed.'
-        result = num1 / num2
-    elif operation == '%':
-        result = num1 % num2
-    else:
-        return 'Invalid operation'
-
-    return str(result)
-
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
